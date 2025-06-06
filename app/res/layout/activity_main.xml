@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- Верхний блок с кнопками -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#F5F5F5"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/btnBold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="B"
+            android:textStyle="bold"
+            android:layout_margin="4dp"/>
+
+        <Button
+            android:id="@+id/btnItalic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="I"
+            android:textStyle="italic"
+            android:layout_margin="4dp"/>
+
+        <Button
+            android:id="@+id/btnUnderline"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="U"
+            android:layout_margin="4dp"/>
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Очистить"
+            android:layout_margin="4dp"/>
+    </LinearLayout>
+
+    <!-- Блок для ввода текста -->
+    <EditText
+        android:id="@+id/etEditor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="start|top"
+        android:hint="Напишите любой текст для записи"
+        android:padding="16dp"
+        android:inputType="textMultiLine"
+        android:background="@android:color/white"
+        android:textSize="18sp"/>
+</LinearLayout>
